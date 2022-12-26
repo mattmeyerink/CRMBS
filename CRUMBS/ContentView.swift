@@ -9,9 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Welcome to CRUMBS!")
+        ZStack {
+            Color(red: 0.1, green: 0.1, blue: 0.1)
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
+            VStack {
+                Spacer()
+                
+                ButtonView()
+                
+                Spacer()
+                
+                NavigationBar()
+            }
         }
-        .padding()
     }
 }
