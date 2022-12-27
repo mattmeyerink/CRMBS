@@ -8,40 +8,54 @@
 import SwiftUI
 
 struct NavigationBar: View {
+    @State var navigateToView: (Views) -> Void
+    
     var body: some View {
         VStack {
             ZStack {
                 Color(red: 0, green: 0.75, blue: 1)
                 
                 HStack {
-                    VStack {
-                        Image(systemName: "button.programmable")
-                        
-                        Text("Buttons")
+                    Button(action: { navigateToView(.buttonView) }) {
+                        VStack {
+                            Image(systemName: "button.programmable")
+                            
+                            Text("Buttons")
+                        }
+                        .foregroundColor(.black)
                     }
                     
                     Spacer()
                     
-                    VStack {
-                        Image(systemName: "globe.americas.fill")
-                        
-                        Text("Map")
+                    Button(action: { navigateToView(.mapView) }) {
+                        VStack {
+                            Image(systemName: "globe.americas.fill")
+                            
+                            Text("Map")
+                        }
+                        .foregroundColor(.black)
                     }
                     
                     Spacer()
                     
-                    VStack {
-                        Image(systemName: "list.bullet.rectangle")
-                        
-                        Text("List")
+                    Button(action: { navigateToView(.listView) }) {
+                        VStack {
+                            Image(systemName: "list.bullet.rectangle")
+                            
+                            Text("List")
+                        }
+                        .foregroundColor(.black)
                     }
                     
                     Spacer()
                     
-                    VStack {
-                        Image(systemName: "chart.pie.fill")
-                        
-                        Text("Stats")
+                    Button(action: { navigateToView(.statView) }) {
+                        VStack {
+                            Image(systemName: "chart.pie.fill")
+                            
+                            Text("Stats")
+                        }
+                        .foregroundColor(.black)
                     }
                 }
                 .padding(.horizontal, 30)
