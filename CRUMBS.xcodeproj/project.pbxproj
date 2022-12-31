@@ -16,6 +16,7 @@
 		D35D0892295A0C6F00941F2C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35D0891295A0C6F00941F2C /* ListView.swift */; };
 		D35D0894295A0C9A00941F2C /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35D0893295A0C9A00941F2C /* StatView.swift */; };
 		D35D0896295A0CBB00941F2C /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35D0895295A0CBB00941F2C /* NavigationBar.swift */; };
+		D3C3C7D92960B30B00066246 /* PinButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3C7D82960B30B00066246 /* PinButtonStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D35D0891295A0C6F00941F2C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		D35D0893295A0C9A00941F2C /* StatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
 		D35D0895295A0CBB00941F2C /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		D3C3C7D82960B30B00066246 /* PinButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinButtonStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				D35D088C295A09D200941F2C /* ButtonView.swift */,
+				D3C3C7D82960B30B00066246 /* PinButtonStyles.swift */,
 			);
 			path = ButtonView;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				D35D0896295A0CBB00941F2C /* NavigationBar.swift in Sources */,
 				D34E820A2956816700928203 /* CRUMBSApp.swift in Sources */,
 				D35D088D295A09D200941F2C /* ButtonView.swift in Sources */,
+				D3C3C7D92960B30B00066246 /* PinButtonStyles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
