@@ -11,9 +11,8 @@ struct ButtonView: View {
     var body: some View {
         VStack {
             Text("CRMBS")
-                .font(.system(size: 30, weight: .bold))
+                .font(.system(size: 40, weight: .semibold))
                 .foregroundColor(.white)
-                .padding(.bottom, 10)
             
             Spacer()
             
@@ -21,39 +20,37 @@ struct ButtonView: View {
                 Button(action: dropPin) {
                     VStack {
                         Image(systemName: "fork.knife")
-                        
-                        Text("Food")
                     }
+                    .frame(width: 75, height: 75)
                 }
                 .buttonStyle(FoodButton())
-                
+                .padding(.trailing, 25)
                 
                 Button(action: dropPin) {
                     VStack {
                         Image(systemName: "bag.fill")
-                        
-                        Text("Shopping")
                     }
+                    .frame(width: 75, height: 75)
                 }
                 .buttonStyle(ShoppingButton())
             }
+            .padding(.bottom, 25)
             
             HStack {
                 Button(action: dropPin) {
                     VStack {
                         Image(systemName: "leaf.fill")
-                        
-                        Text("Nature")
                     }
+                    .frame(width: 75, height: 75)
                 }
                 .buttonStyle(NatureButton())
+                .padding(.trailing, 25)
                 
                 Button(action: dropPin) {
                     VStack {
                         Image(systemName: "popcorn.fill")
-                        
-                        Text("Entertainment")
                     }
+                    .frame(width: 75, height: 75)
                 }
                 .buttonStyle(EntertainmentButton())
             }
