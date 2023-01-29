@@ -48,12 +48,21 @@ struct ContentView: View {
                 )
             }
         }
+        .edgesIgnoringSafeArea(getSafeAreasToIgnore())
     }
     
     func navigateToView(newView: Views) -> Void {
         if (currentView != newView) {
             currentView = newView
         }
+    }
+    
+    func getSafeAreasToIgnore() -> Edge.Set {
+        if (currentView == .mapView) {
+            return [.top]
+        }
+        
+        return []
     }
 }
 
