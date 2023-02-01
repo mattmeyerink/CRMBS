@@ -13,7 +13,7 @@ struct MapView: View {
 
     var region: Binding<MKCoordinateRegion>? {
         guard let location = locationManager.location else {
-            return MKCoordinateRegion.goldenGateRegion().getBinding()
+            return MKCoordinateRegion.annArborRegion().getBinding()
         }
         
         let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)

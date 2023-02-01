@@ -35,8 +35,8 @@ extension LocationManager: CLLocationManagerDelegate {
 }
 
 extension MKCoordinateRegion {
-    static func goldenGateRegion() -> MKCoordinateRegion {
-        MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37.819527098978355, longitude:  -122.47854602016669), latitudinalMeters: 5000, longitudinalMeters: 5000)
+    static func annArborRegion() -> MKCoordinateRegion {
+        MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 42.2808, longitude:  -83.7430), latitudinalMeters: 5000, longitudinalMeters: 5000)
     }
     
     func getBinding() -> Binding<MKCoordinateRegion>? {
