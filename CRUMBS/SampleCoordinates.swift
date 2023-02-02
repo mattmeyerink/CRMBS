@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Ann Arbor Location Coordinates
 let THE_DIAG_COORDINATES = Coordinates(latitude: 42.276978876564385, longitude: -83.73821579331586)
 let THE_ARB_COORDINATES = Coordinates(latitude: 42.28166373118232, longitude: -83.72559214998219)
 let PINBALL_PETES_COORDINATES = Coordinates(latitude: 42.27509630649714, longitude: -83.73383440732366)

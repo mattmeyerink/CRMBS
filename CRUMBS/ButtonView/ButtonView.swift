@@ -54,6 +54,17 @@ struct ButtonView: View {
                 }
                 .buttonStyle(EntertainmentButton())
             }
+            .padding(.bottom, 25)
+            
+            HStack {
+                Button(action: dropPin) {
+                    VStack {
+                        Image(systemName: "building.columns.fill")
+                    }
+                    .frame(width: 75, height: 75)
+                }
+                .buttonStyle(LandmarkButton())
+            }
             
             Spacer()
         }

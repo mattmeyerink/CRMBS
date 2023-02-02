@@ -13,6 +13,7 @@ enum LocationType: Codable {
     case FOOD
     case SHOPPING
     case ENTERTAINMENT
+    case LANDMARK
 }
 
 struct Coordinates: Codable {
