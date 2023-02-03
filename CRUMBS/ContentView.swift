@@ -16,6 +16,7 @@ enum Views {
 
 struct ContentView: View {
     @State var currentView: Views = .buttonView
+    @State var crumbs: [Crumb] = annArborCrumbs
     
     var body: some View {
         ZStack {
@@ -30,7 +31,7 @@ struct ContentView: View {
                 }
                 
                 if (currentView == .mapView) {
-                    MapView()
+                    MapView(crumbs: crumbs)
                 }
                 
                 if (currentView == .listView) {

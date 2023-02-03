@@ -19,7 +19,7 @@
 		D35D0896295A0CBB00941F2C /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35D0895295A0CBB00941F2C /* NavigationBar.swift */; };
 		D37EB8CE2977BB2000050DF1 /* Crmb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37EB8CD2977BB2000050DF1 /* Crmb.swift */; };
 		D3C3C7D92960B30B00066246 /* PinButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3C7D82960B30B00066246 /* PinButtonStyles.swift */; };
-		D3E26A96298A0167008D47DE /* SampleCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E26A95298A0167008D47DE /* SampleCoordinates.swift */; };
+		D3E26A96298A0167008D47DE /* SampleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E26A95298A0167008D47DE /* SampleLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 		D35D0895295A0CBB00941F2C /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		D37EB8CD2977BB2000050DF1 /* Crmb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crmb.swift; sourceTree = "<group>"; };
 		D3C3C7D82960B30B00066246 /* PinButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinButtonStyles.swift; sourceTree = "<group>"; };
-		D3E26A95298A0167008D47DE /* SampleCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCoordinates.swift; sourceTree = "<group>"; };
+		D3E26A95298A0167008D47DE /* SampleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 		D34E82082956816700928203 /* CRUMBS */ = {
 			isa = PBXGroup;
 			children = (
-				D3E26A95298A0167008D47DE /* SampleCoordinates.swift */,
+				D3E26A95298A0167008D47DE /* SampleLocation.swift */,
 				D37EB8CD2977BB2000050DF1 /* Crmb.swift */,
 				D35D088E295A0A7600941F2C /* NavigationBar */,
 				D34E821B295685E000928203 /* StatView */,
@@ -210,7 +210,7 @@
 				D34E820C2956816700928203 /* ContentView.swift in Sources */,
 				D32AA9C82987245100943D20 /* LocationManager.swift in Sources */,
 				D35D0890295A0C1800941F2C /* MapView.swift in Sources */,
-				D3E26A96298A0167008D47DE /* SampleCoordinates.swift in Sources */,
+				D3E26A96298A0167008D47DE /* SampleLocation.swift in Sources */,
 				D35D0892295A0C6F00941F2C /* ListView.swift in Sources */,
 				D35D0896295A0CBB00941F2C /* NavigationBar.swift in Sources */,
 				D34E820A2956816700928203 /* CRUMBSApp.swift in Sources */,
