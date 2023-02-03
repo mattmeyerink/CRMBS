@@ -42,3 +42,22 @@ let DETROIT_COOKIE_CO_CRMB = Crumb(locationType: .FOOD, dateCreated: Date(), coo
 let STOCKWELL_HALL_CRMB = Crumb(locationType: .LANDMARK, dateCreated: Date(), coordinates: STOCKWELL_HALL_COORDINATES)
 let ZINGERMANS_CRMB = Crumb(locationType: .FOOD, dateCreated: Date(), coordinates: ZINGERMANS_COORDINATES)
 let FOUND_CRMB = Crumb(locationType: .SHOPPING, dateCreated: Date(), coordinates: FOUND_COORDINATES)
+
+let annArborCrumbs: [Crumb] = [
+    THE_DIAG_CRMB,
+    THE_ARB_CRMB,
+    PINBALL_PETES_CRMB,
+    DOMINOS_PIZZA_CRMB,
+    THE_DEWEY_HOME_CRMB,
+    THE_THAYER_HOME_CRMB,
+    THE_BIG_HOUSE_CRMB,
+    THE_CRISLER_CENTER_CRMB,
+    BLUE_TRACTOR_CRMB,
+    BLANK_SLATE_CREAMERY_CRMB,
+    JOLLY_PUMPKIN_CRMB,
+    BELL_TOWER_CRMB,
+    DETROIT_COOKIE_CO_CRMB,
+    STOCKWELL_HALL_CRMB,
+    ZINGERMANS_CRMB,
+    FOUND_CRMB
+]
