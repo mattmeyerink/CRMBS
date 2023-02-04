@@ -19,51 +19,51 @@ struct ButtonView: View {
             HStack {
                 Button(action: dropPin) {
                     VStack {
-                        Image(systemName: "fork.knife")
+                        Image(systemName: locationTypeIconNames[.FOOD]!)
                     }
                     .frame(width: 75, height: 75)
                 }
-                .buttonStyle(FoodButton())
+                .buttonStyle(CrmbPinButtonStyle(locationType: .FOOD))
                 .padding(.trailing, 25)
                 
                 Button(action: dropPin) {
                     VStack {
-                        Image(systemName: "bag.fill")
+                        Image(systemName: locationTypeIconNames[.SHOPPING]!)
                     }
                     .frame(width: 75, height: 75)
                 }
-                .buttonStyle(ShoppingButton())
+                .buttonStyle(CrmbPinButtonStyle(locationType: .SHOPPING))
             }
             .padding(.bottom, 25)
             
             HStack {
                 Button(action: dropPin) {
                     VStack {
-                        Image(systemName: "leaf.fill")
+                        Image(systemName: locationTypeIconNames[.NATURE]!)
                     }
                     .frame(width: 75, height: 75)
                 }
-                .buttonStyle(NatureButton())
+                .buttonStyle(CrmbPinButtonStyle(locationType: .NATURE))
                 .padding(.trailing, 25)
                 
                 Button(action: dropPin) {
                     VStack {
-                        Image(systemName: "popcorn.fill")
+                        Image(systemName: locationTypeIconNames[.ENTERTAINMENT]!)
                     }
                     .frame(width: 75, height: 75)
                 }
-                .buttonStyle(EntertainmentButton())
+                .buttonStyle(CrmbPinButtonStyle(locationType: .ENTERTAINMENT))
             }
             .padding(.bottom, 25)
             
             HStack {
                 Button(action: dropPin) {
                     VStack {
-                        Image(systemName: "building.columns.fill")
+                        Image(systemName: locationTypeIconNames[.LANDMARK]!)
                     }
                     .frame(width: 75, height: 75)
                 }
-                .buttonStyle(LandmarkButton())
+                .buttonStyle(CrmbPinButtonStyle(locationType: .LANDMARK))
             }
             
             Spacer()

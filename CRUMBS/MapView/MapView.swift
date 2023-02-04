@@ -24,10 +24,16 @@ struct MapView: View {
     
     var body: some View {
         if let region = region {
-            Map(coordinateRegion: region, showsUserLocation: true, userTrackingMode: .constant(.follow), annotationItems: crumbs) {
-                MapMarker(coordinate: CLLocationCoordinate2D(latitude: $0.coordinates.latitude, longitude: $0.coordinates.longitude))
+            Map(coordinateRegion: region, showsUserLocation: true, userTrackingMode: .constant(.follow), annotationItems: crumbs) { crmb in
+                MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: crmb.coordinates.latitude, longitude: crmb.coordinates.longitude)) {
+                    VStack{
+                        CrmbAnnotation(crmb: crmb)
+                    }
+                }
             }
                 .edgesIgnoringSafeArea(.top)
         }
     }
+    
+    
 }

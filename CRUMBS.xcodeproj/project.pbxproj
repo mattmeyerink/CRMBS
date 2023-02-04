@@ -18,6 +18,9 @@
 		D35D0894295A0C9A00941F2C /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35D0893295A0C9A00941F2C /* StatView.swift */; };
 		D35D0896295A0CBB00941F2C /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35D0895295A0CBB00941F2C /* NavigationBar.swift */; };
 		D37EB8CE2977BB2000050DF1 /* Crmb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37EB8CD2977BB2000050DF1 /* Crmb.swift */; };
+		D398D996298EE9160067E2EE /* CrmbAnnotationStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398D995298EE9160067E2EE /* CrmbAnnotationStyles.swift */; };
+		D398D998298EED160067E2EE /* CrmbAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398D997298EED160067E2EE /* CrmbAnnotation.swift */; };
+		D398D99A298EFE760067E2EE /* LocationTypeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398D999298EFE750067E2EE /* LocationTypeSettings.swift */; };
 		D3C3C7D92960B30B00066246 /* PinButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3C7D82960B30B00066246 /* PinButtonStyles.swift */; };
 		D3E26A96298A0167008D47DE /* SampleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E26A95298A0167008D47DE /* SampleLocation.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +39,9 @@
 		D35D0893295A0C9A00941F2C /* StatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
 		D35D0895295A0CBB00941F2C /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		D37EB8CD2977BB2000050DF1 /* Crmb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crmb.swift; sourceTree = "<group>"; };
+		D398D995298EE9160067E2EE /* CrmbAnnotationStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmbAnnotationStyles.swift; sourceTree = "<group>"; };
+		D398D997298EED160067E2EE /* CrmbAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmbAnnotation.swift; sourceTree = "<group>"; };
+		D398D999298EFE750067E2EE /* LocationTypeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTypeSettings.swift; sourceTree = "<group>"; };
 		D3C3C7D82960B30B00066246 /* PinButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinButtonStyles.swift; sourceTree = "<group>"; };
 		D3E26A95298A0167008D47DE /* SampleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +89,7 @@
 				D34E820F2956816900928203 /* CRUMBS.entitlements */,
 				D34E82102956816900928203 /* Preview Content */,
 				D32AA9C72987245100943D20 /* LocationManager.swift */,
+				D398D999298EFE750067E2EE /* LocationTypeSettings.swift */,
 			);
 			path = CRUMBS;
 			sourceTree = "<group>";
@@ -108,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				D35D088F295A0C1800941F2C /* MapView.swift */,
+				D398D995298EE9160067E2EE /* CrmbAnnotationStyles.swift */,
+				D398D997298EED160067E2EE /* CrmbAnnotation.swift */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
@@ -213,10 +222,13 @@
 				D3E26A96298A0167008D47DE /* SampleLocation.swift in Sources */,
 				D35D0892295A0C6F00941F2C /* ListView.swift in Sources */,
 				D35D0896295A0CBB00941F2C /* NavigationBar.swift in Sources */,
+				D398D99A298EFE760067E2EE /* LocationTypeSettings.swift in Sources */,
 				D34E820A2956816700928203 /* CRUMBSApp.swift in Sources */,
 				D35D088D295A09D200941F2C /* ButtonView.swift in Sources */,
+				D398D996298EE9160067E2EE /* CrmbAnnotationStyles.swift in Sources */,
 				D3C3C7D92960B30B00066246 /* PinButtonStyles.swift in Sources */,
 				D37EB8CE2977BB2000050DF1 /* Crmb.swift in Sources */,
+				D398D998298EED160067E2EE /* CrmbAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
