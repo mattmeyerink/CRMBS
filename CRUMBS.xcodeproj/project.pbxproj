@@ -23,6 +23,7 @@
 		D398D99A298EFE760067E2EE /* LocationTypeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398D999298EFE750067E2EE /* LocationTypeSettings.swift */; };
 		D3C3C7D92960B30B00066246 /* PinButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3C7D82960B30B00066246 /* PinButtonStyles.swift */; };
 		D3DB60AF298FFADE0034A5F4 /* CrmbActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB60AE298FFADE0034A5F4 /* CrmbActionBar.swift */; };
+		D3DB60B129900A5A0034A5F4 /* DismissCrmbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB60B029900A5A0034A5F4 /* DismissCrmbButton.swift */; };
 		D3E26A96298A0167008D47DE /* SampleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E26A95298A0167008D47DE /* SampleLocation.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		D398D999298EFE750067E2EE /* LocationTypeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTypeSettings.swift; sourceTree = "<group>"; };
 		D3C3C7D82960B30B00066246 /* PinButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinButtonStyles.swift; sourceTree = "<group>"; };
 		D3DB60AE298FFADE0034A5F4 /* CrmbActionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmbActionBar.swift; sourceTree = "<group>"; };
+		D3DB60B029900A5A0034A5F4 /* DismissCrmbButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissCrmbButton.swift; sourceTree = "<group>"; };
 		D3E26A95298A0167008D47DE /* SampleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 				D398D995298EE9160067E2EE /* CrmbAnnotationStyles.swift */,
 				D398D997298EED160067E2EE /* CrmbAnnotation.swift */,
 				D3DB60AE298FFADE0034A5F4 /* CrmbActionBar.swift */,
+				D3DB60B029900A5A0034A5F4 /* DismissCrmbButton.swift */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				D398D996298EE9160067E2EE /* CrmbAnnotationStyles.swift in Sources */,
 				D3C3C7D92960B30B00066246 /* PinButtonStyles.swift in Sources */,
 				D37EB8CE2977BB2000050DF1 /* Crmb.swift in Sources */,
+				D3DB60B129900A5A0034A5F4 /* DismissCrmbButton.swift in Sources */,
 				D398D998298EED160067E2EE /* CrmbAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

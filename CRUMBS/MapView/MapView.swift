@@ -35,6 +35,8 @@ struct MapView: View {
                     .edgesIgnoringSafeArea(.top)
                 
                 VStack {
+                    DismissCrmbButton()
+                    
                     Spacer()
                     
                     CrmbActionBar()
