@@ -24,16 +24,23 @@ struct MapView: View {
     
     var body: some View {
         if let region = region {
-            Map(coordinateRegion: region, showsUserLocation: true, userTrackingMode: .constant(.follow), annotationItems: crumbs) { crmb in
-                MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: crmb.coordinates.latitude, longitude: crmb.coordinates.longitude)) {
-                    VStack{
-                        CrmbAnnotation(crmb: crmb)
+            ZStack {
+                Map(coordinateRegion: region, showsUserLocation: true, userTrackingMode: .constant(.follow), annotationItems: crumbs) { crmb in
+                    MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: crmb.coordinates.latitude, longitude: crmb.coordinates.longitude)) {
+                        VStack{
+                            CrmbAnnotation(crmb: crmb)
+                        }
                     }
                 }
+                    .edgesIgnoringSafeArea(.top)
+                
+                VStack {
+                    Spacer()
+                    
+                    CrmbActionBar()
+                        .padding(.bottom)
+                }
             }
-                .edgesIgnoringSafeArea(.top)
         }
     }
-    
-    
 }

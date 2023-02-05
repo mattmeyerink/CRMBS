@@ -24,6 +24,8 @@ struct CrmbAnnotation: View {
     }
     
     func openCrmb() -> Void {
-        
+        // Zoom in on the selected crmb.
+        // Potentially make the selected crmb much smaller
+        // Display an action bar (Edit/Delete/Share)
     }
 }

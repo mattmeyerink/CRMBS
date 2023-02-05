@@ -22,6 +22,7 @@
 		D398D998298EED160067E2EE /* CrmbAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398D997298EED160067E2EE /* CrmbAnnotation.swift */; };
 		D398D99A298EFE760067E2EE /* LocationTypeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398D999298EFE750067E2EE /* LocationTypeSettings.swift */; };
 		D3C3C7D92960B30B00066246 /* PinButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3C7D82960B30B00066246 /* PinButtonStyles.swift */; };
+		D3DB60AF298FFADE0034A5F4 /* CrmbActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB60AE298FFADE0034A5F4 /* CrmbActionBar.swift */; };
 		D3E26A96298A0167008D47DE /* SampleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E26A95298A0167008D47DE /* SampleLocation.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		D398D997298EED160067E2EE /* CrmbAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmbAnnotation.swift; sourceTree = "<group>"; };
 		D398D999298EFE750067E2EE /* LocationTypeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTypeSettings.swift; sourceTree = "<group>"; };
 		D3C3C7D82960B30B00066246 /* PinButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinButtonStyles.swift; sourceTree = "<group>"; };
+		D3DB60AE298FFADE0034A5F4 /* CrmbActionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmbActionBar.swift; sourceTree = "<group>"; };
 		D3E26A95298A0167008D47DE /* SampleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				D35D088F295A0C1800941F2C /* MapView.swift */,
 				D398D995298EE9160067E2EE /* CrmbAnnotationStyles.swift */,
 				D398D997298EED160067E2EE /* CrmbAnnotation.swift */,
+				D3DB60AE298FFADE0034A5F4 /* CrmbActionBar.swift */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				D32AA9C82987245100943D20 /* LocationManager.swift in Sources */,
 				D35D0890295A0C1800941F2C /* MapView.swift in Sources */,
 				D3E26A96298A0167008D47DE /* SampleLocation.swift in Sources */,
+				D3DB60AF298FFADE0034A5F4 /* CrmbActionBar.swift in Sources */,
 				D35D0892295A0C6F00941F2C /* ListView.swift in Sources */,
 				D35D0896295A0CBB00941F2C /* NavigationBar.swift in Sources */,
 				D398D99A298EFE760067E2EE /* LocationTypeSettings.swift in Sources */,
