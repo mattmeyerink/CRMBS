@@ -13,38 +13,40 @@ struct MapView: View {
     
     @State var crumbs: [Crumb]
     @State var focusedCrmb: Crumb?
-
-    var region: Binding<MKCoordinateRegion>? {
-        guard let location = locationManager.location else {
-            return MKCoordinateRegion.annArborRegion().getBinding()
-        }
-        
-        let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
-        
-        return region.getBinding()
-    }
+    
+    @State var centerRegion: MKCoordinateRegion = MKCoordinateRegion.annArborRegion()
     
     var body: some View {
-        if let region = region {
-            ZStack {
-                Map(coordinateRegion: region, showsUserLocation: true, userTrackingMode: .constant(.follow), annotationItems: crumbs) { crmb in
-                    MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: crmb.coordinates.latitude, longitude: crmb.coordinates.longitude)) {
-                        VStack{
-                            CrmbAnnotation(focusedCrmb: $focusedCrmb, crmb: crmb)
-                        }
+        ZStack {
+            Map(coordinateRegion: $centerRegion, showsUserLocation: true, userTrackingMode: .constant(.follow), annotationItems: crumbs) { crmb in
+                MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: crmb.coordinates.latitude, longitude: crmb.coordinates.longitude)) {
+                    VStack{
+                        CrmbAnnotation(focusedCrmb: $focusedCrmb, crmb: crmb)
                     }
                 }
-                    .edgesIgnoringSafeArea(.top)
-                
-                VStack {
-                    DismissCrmbButton(focusedCrmb: $focusedCrmb)
-                    
-                    Spacer()
-                    
-                    CrmbActionBar(focusedCrmb: $focusedCrmb)
-                        .padding(.bottom)
+            }.onAppear {
+                if (locationManager.location != nil) {
+                    let centerLocationLatitude = locationManager.location?.coordinate.latitude
+                    let centerLocationLongitude = locationManager.location?.coordinate.longitude
+                    let centerLocation = CLLocationCoordinate2D(latitude: centerLocationLatitude!, longitude: centerLocationLongitude!)
+                    centerRegion = MKCoordinateRegion(center: centerLocation, latitudinalMeters: 500, longitudinalMeters: 500)
                 }
             }
+                .edgesIgnoringSafeArea(.top)
+            
+            VStack {
+                DismissCrmbButton(focusedCrmb: $focusedCrmb)
+                
+                Spacer()
+                
+                CrmbActionBar(focusedCrmb: $focusedCrmb)
+                    .padding(.bottom)
+            }
         }
+    }
+    
+    func updateRegion(location: Coordinates) {
+        var locationCenter = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
+        centerRegion = MKCoordinateRegion(center: locationCenter, latitudinalMeters: 250, longitudinalMeters: 250)
     }
 }
