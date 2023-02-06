@@ -19,24 +19,28 @@ struct DismissButtonStyle: ButtonStyle {
 }
 
 struct DismissCrmbButton: View {
+    @Binding var focusedCrmb: Crumb?
+    
     var body: some View {
-        HStack {
-            Spacer()
-            
-            Button (action: dismissCrumb) {
-                VStack {
-                    Image(systemName: "xmark")
-                        .foregroundColor(.white)
-                        .font(.system(size: 30, weight: .semibold))
+        if (focusedCrmb != nil) {
+            HStack {
+                Spacer()
+                
+                Button (action: dismissCrumb) {
+                    VStack {
+                        Image(systemName: "xmark")
+                            .foregroundColor(.white)
+                            .font(.system(size: 30, weight: .semibold))
+                    }
                 }
+                .buttonStyle(DismissButtonStyle())
             }
-            .buttonStyle(DismissButtonStyle())
+            .padding(.top, 75)
+            .padding(.trailing, 15)
         }
-        .padding(.top, 75)
-        .padding(.trailing, 15)
     }
     
     func dismissCrumb() {
-        
+        focusedCrmb = nil
     }
 }

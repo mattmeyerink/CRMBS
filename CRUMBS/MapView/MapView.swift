@@ -10,7 +10,9 @@ import MapKit
 
 struct MapView: View {
     @StateObject private var locationManager = LocationManager()
+    
     @State var crumbs: [Crumb]
+    @State var focusedCrmb: Crumb?
 
     var region: Binding<MKCoordinateRegion>? {
         guard let location = locationManager.location else {
@@ -28,18 +30,18 @@ struct MapView: View {
                 Map(coordinateRegion: region, showsUserLocation: true, userTrackingMode: .constant(.follow), annotationItems: crumbs) { crmb in
                     MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: crmb.coordinates.latitude, longitude: crmb.coordinates.longitude)) {
                         VStack{
-                            CrmbAnnotation(crmb: crmb)
+                            CrmbAnnotation(focusedCrmb: $focusedCrmb, crmb: crmb)
                         }
                     }
                 }
                     .edgesIgnoringSafeArea(.top)
                 
                 VStack {
-                    DismissCrmbButton()
+                    DismissCrmbButton(focusedCrmb: $focusedCrmb)
                     
                     Spacer()
                     
-                    CrmbActionBar()
+                    CrmbActionBar(focusedCrmb: $focusedCrmb)
                         .padding(.bottom)
                 }
             }
