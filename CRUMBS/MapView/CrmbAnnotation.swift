@@ -12,6 +12,7 @@ struct CrmbAnnotation: View {
     @Binding var focusedCrmb: Crumb?
     
     @State var crmb: Crumb
+    @State var updateRegion: (Coordinates) -> Void
 
     var body: some View {
         if (focusedCrmb == nil || focusedCrmb?.id == crmb.id) {
@@ -27,6 +28,7 @@ struct CrmbAnnotation: View {
     
     func openCrmb() -> Void {
         focusedCrmb = crmb
+        updateRegion(crmb.coordinates)
         
         // Zoom in on the selected crmb.
         // Remember the user's previous zoom level in case they hit x

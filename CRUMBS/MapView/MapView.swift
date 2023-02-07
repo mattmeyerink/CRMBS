@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    @StateObject private var locationManager = LocationManager()
+    @State var locationManager: LocationManager
     
     @State var crumbs: [Crumb]
     @State var focusedCrmb: Crumb?
@@ -18,10 +18,10 @@ struct MapView: View {
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $centerRegion, showsUserLocation: true, userTrackingMode: .constant(.follow), annotationItems: crumbs) { crmb in
+            Map(coordinateRegion: $centerRegion, showsUserLocation: true, annotationItems: crumbs) { crmb in
                 MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: crmb.coordinates.latitude, longitude: crmb.coordinates.longitude)) {
                     VStack{
-                        CrmbAnnotation(focusedCrmb: $focusedCrmb, crmb: crmb)
+                        CrmbAnnotation(focusedCrmb: $focusedCrmb, crmb: crmb, updateRegion: updateRegion)
                     }
                 }
             }.onAppear {
@@ -46,7 +46,7 @@ struct MapView: View {
     }
     
     func updateRegion(location: Coordinates) {
-        var locationCenter = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
+        let locationCenter = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
         centerRegion = MKCoordinateRegion(center: locationCenter, latitudinalMeters: 250, longitudinalMeters: 250)
     }
 }

@@ -15,7 +15,9 @@ enum Views {
 }
 
 struct ContentView: View {
-    @State var currentView: Views = .buttonView
+    @StateObject private var locationManager = LocationManager()
+    
+    @State var currentView: Views = .mapView
     @State var crumbs: [Crumb] = annArborCrumbs
     
     var body: some View {
@@ -31,7 +33,7 @@ struct ContentView: View {
                 }
                 
                 if (currentView == .mapView) {
-                    MapView(crumbs: crumbs)
+                    MapView(locationManager: locationManager, crumbs: crumbs)
                 }
                 
                 if (currentView == .listView) {
