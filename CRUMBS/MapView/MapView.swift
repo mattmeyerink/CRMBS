@@ -18,20 +18,7 @@ struct MapView: View {
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $centerRegion, showsUserLocation: true, annotationItems: crumbs) { crmb in
-                MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: crmb.coordinates.latitude, longitude: crmb.coordinates.longitude)) {
-                    VStack{
-                        CrmbAnnotation(focusedCrmb: $focusedCrmb, crmb: crmb, updateRegion: updateRegion)
-                    }
-                }
-            }.onAppear {
-                if (locationManager.location != nil) {
-                    let centerLocationLatitude = locationManager.location?.coordinate.latitude
-                    let centerLocationLongitude = locationManager.location?.coordinate.longitude
-                    let centerLocation = CLLocationCoordinate2D(latitude: centerLocationLatitude!, longitude: centerLocationLongitude!)
-                    centerRegion = MKCoordinateRegion(center: centerLocation, latitudinalMeters: 500, longitudinalMeters: 500)
-                }
-            }
+            MapViewV2(crumbs: [])
                 .edgesIgnoringSafeArea(.top)
             
             VStack {
