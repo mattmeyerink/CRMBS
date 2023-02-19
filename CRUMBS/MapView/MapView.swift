@@ -18,7 +18,7 @@ struct MapView: View {
     
     var body: some View {
         ZStack {
-            MapViewV2(crumbs: [])
+            MapViewV2(crumbs: crumbs)
                 .edgesIgnoringSafeArea(.top)
             
             VStack {
